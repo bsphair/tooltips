@@ -1,13 +1,19 @@
 import './App.css';
-import Button from "components/button";
 
 function App() {
   return (
     <div className="App">
-      <Button
-        tooltipText="Some interesting text"
-        buttonText="Info"
-      />
+      <div
+        className="tooltip"
+        tooltiptext="Some extra info"
+      >
+        <button
+          onClick={() => {}}
+          className="custom-button"
+        >
+          Info
+        </button>
+      </div>
     </div>
   );
 }
